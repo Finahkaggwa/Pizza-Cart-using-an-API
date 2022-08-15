@@ -19,8 +19,12 @@ document.addEventListener('alpine:init', () => {
 
             },
 
+            pizzaImage(pizza) {
+                return `/img/${pizza.size}.png`
+            },
+
             message: '',
-            username: 'Ssemakokilo',
+            username: '',
             pizzas: [],
             cartId: '',
             cart: {},
@@ -52,6 +56,9 @@ document.addEventListener('alpine:init', () => {
                         this.showCart();
                     })
                     .catch(err => alert(err));
+
+                    //.get('https://pizza-cart-api.herokuapp.com/api/pizzas/featured')
+
             }
 
         }
