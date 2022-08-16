@@ -20,7 +20,7 @@ document.addEventListener('alpine:init', () => {
             },
 
             pizzaImage(pizza) {
-                return `/img/${pizza.size}.png`
+                return `./img/${pizza.size}.png`
             },
 
             message: '',
